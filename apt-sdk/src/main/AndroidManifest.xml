@@ -1,2 +1,2 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sensorsdata.analytics.android.app.sdk" />
+    package="com.github.microkibaco.android.app.sdk" />

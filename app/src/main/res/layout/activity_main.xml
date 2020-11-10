@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sensorsdata.analytics.android.app.MainActivity">
+    tools:context="com.github.microkibaco.android.app.MainActivity">
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/button"

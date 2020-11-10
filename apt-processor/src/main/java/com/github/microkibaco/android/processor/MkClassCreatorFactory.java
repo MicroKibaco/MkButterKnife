@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.processor;
+package com.github.microkibaco.android.processor;
 
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.MethodSpec;
@@ -16,13 +16,13 @@ import javax.lang.model.util.Elements;
 /**
  * Created by SensorsData
  */
-public class SensorsDataClassCreatorFactory {
+public class MkClassCreatorFactory {
     private String mBindingClassName;
     private String mPackageName;
     private TypeElement mTypeElement;
     private Map<Integer, VariableElement> mVariableElementMap = new HashMap<>();
 
-    SensorsDataClassCreatorFactory(Elements elementUtils, TypeElement classElement) {
+    MkClassCreatorFactory(Elements elementUtils, TypeElement classElement) {
         this.mTypeElement = classElement;
         PackageElement packageElement = elementUtils.getPackageOf(mTypeElement);
         String packageName = packageElement.getQualifiedName().toString();

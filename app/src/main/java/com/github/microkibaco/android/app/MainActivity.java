@@ -1,14 +1,14 @@
-package com.sensorsdata.analytics.android.app;
+package com.github.microkibaco.android.app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 
-import com.sensorsdata.analytics.android.annotation.SensorsDataBindView;
-import com.sensorsdata.analytics.android.sdk.SensorsDataAPI;
+import com.github.microkibaco.android.annotation.MkBindView;
+import com.github.microkibaco.android.sdk.MkButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-    @SensorsDataBindView(R.id.button)
+    @MkBindView(R.id.button)
     AppCompatButton button;
 
     @Override
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SensorsDataAPI.bindView(this);
+        MkButterKnife.bindView(this);
 
         button.setText("New Text");
     }

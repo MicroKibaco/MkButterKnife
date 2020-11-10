@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.annotation;
+package com.github.microkibaco.android.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.FIELD)
-public @interface SensorsDataBindView {
+public @interface MkBindView {
     int value();
 }
